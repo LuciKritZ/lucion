@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Lucion',
-  description: 'The connected workspace where better, faster work happens.',
+  description: 'A connected workspace for better, efficient, and faster work.',
   icons: {
     icon: [
       {

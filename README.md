@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lucion
+
+Lucion is a team workspace inspired by [Notion](https://www.notion.so/). A connected workspace for better, efficient, and faster work. It is created by [LuciKritZ](https://github.com/LuciKritZ). Lucion is based on the following technologies:
+
+1. [Next.js 14](https://github.com/vercel/next.js)
+2. [Tailwind CSS](https://tailwindcss.com/)
+3. [Clerk](https://clerk.com/)
+4. [Convex](https://www.convex.dev/)
+5. [Edgestore](https://edgestore.dev/)
 
 ## Getting Started
 
-First, run the development server:
+### Local Machine
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Have both [npm](https://www.npmjs.com/) and [node](https://nodejs.org/en/) installed
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run `npm install` to install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run `npx convex dev`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   - This will run start a convex backend.
+   - For more information refer [Convex Readme](convex/README.md)
 
-## Learn More
+4. Run `npm run dev` in a separate terminal
+   - This will start the development server.
 
-To learn more about Next.js, take a look at the following resources:
+## Typescript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is developed completely in TypeScript.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[Crash course](https://www.youtube.com/watch?v=1jMJDbq7ZX4)
 
-## Deploy on Vercel
+## Engines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Consult the `"engines"` section of package.json for the recommended version of **node**, and **npm**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### What if my node or npm version is not accepted?
+
+- Compatible versions of node and npm are tightly coupled; if one or the other is not compatible, run: `nvm install`.
+
+## Release Notes
+
+See [Deployments](https://github.com/LuciKritZ/lucion/deployments)
+
+### Environment Variables in Use Today
+
+The application currently has 6 environment variables:
+
+1. `CONVEX_DEPLOYMENT`
+
+   - **What it is**: A Convex deployment variable provided by Convex itself.
+   - **Where it comes from**: [Convex](https://convex.dev) -> Login -> Project -> Project Settings or after you create a project in Convex.
+   - **Be advised**: There must NOT be a terminating slash (`/`) at the end of this value.
+
+2. `NEXT_PUBLIC_CONVEX_URL`
+
+   - **What it is**: A Convex deployment variable provided by Convex itself.
+   - **Where it comes from**: [Convex](https://convex.dev) -> Login -> Project -> Project Settings or after you create a project in Convex.
+
+3. `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
+
+   - **What it is**: This is a Clerk key which should is used in the frontend code, can be safely shared, and does not need to be kept secret. [Reference](providers/convex.provider.tsx)
+   - **Where it comes from**: [Clerk](https://clerk.com) -> Login -> Dashboard -> [Your Application] -> API Keys
+
+4. `CLERK_SECRET_KEY`
+
+   - **What it is**: This is the secret key for Clerk which is supposed to be used from our backend code. It's very sensitive and should be deleted if leaked.
+   - **Where it comes from**: [Clerk](https://clerk.com) -> Login -> Dashboard -> [Your Application] -> API Keys
+
+5. `EDGE_STORE_ACCESS_KEY`
+
+   - **What it is**: This is an edgestore variable access key.
+   - **Where it comes from**: [Edgestore](https://edgestore.dev) -> Login -> Dashboard -> Project -> Info icon -> Project Keys
+
+6. `EDGE_STORE_SECRET_KEY`
+
+   - **What it is**: This is an edgestore variable secret key.
+   - **Where it comes from**: [Edgestore](https://edgestore.dev) -> Login -> Dashboard -> Project -> Info icon -> Project Keys
