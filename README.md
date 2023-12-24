@@ -80,4 +80,4 @@ The application currently has 6 environment variables:
 
 ## Shout out to
 
-[Code with Antonio](https://www.codewithantonio.com/) for an excellent tutorial on youtube. I really appreciate it what he's doing for the community. 🫶🏻
+[Code with Antonio](https://www.codewithantonio.com/) for an excellent tutorial on youtube. I really appreciate what he's doing for the community. 🫶🏻
