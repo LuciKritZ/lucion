@@ -1,6 +1,6 @@
 # Lucion
 
-Lucion is a team workspace inspired by [Notion](https://www.notion.so/). A connected workspace for better, efficient, and faster work. It is created by [LuciKritZ](https://github.com/LuciKritZ). Lucion is based on the following technologies:
+[Lucion](https://lucion.vercel.app/) is a team workspace inspired by [Notion](https://www.notion.so/). A connected workspace for better, efficient, and faster work. It is created by [LuciKritZ](https://github.com/LuciKritZ). Lucion is based on the following technologies:
 
 1. [Next.js 14](https://github.com/vercel/next.js)
 2. [Tailwind CSS](https://tailwindcss.com/)
@@ -18,8 +18,8 @@ Lucion is a team workspace inspired by [Notion](https://www.notion.so/). A conne
 
 3. Run `npx convex dev`
 
-   - This will run start a convex backend.
-   - For more information refer [Convex Readme](convex/README.md)
+   - This will start a convex backend.
+   - For more information on Convex, refer this [README.md](convex/README.md)
 
 4. Run `npm run dev` in a separate terminal
    - This will start the development server.
@@ -38,11 +38,12 @@ Consult the `"engines"` section of package.json for the recommended version of *
 
 - Compatible versions of node and npm are tightly coupled; if one or the other is not compatible, run: `nvm install`.
 
-## Release Notes
+<!-- TODO -->
+<!-- ## Release Notes [In Progress]
 
-See [Deployments](https://github.com/LuciKritZ/lucion/deployments)
+See [Deployments](https://github.com/LuciKritZ/lucion/deployments) -->
 
-### Environment Variables in Use Today
+## Environment Variables in Use Today
 
 The application currently has 6 environment variables:
 
