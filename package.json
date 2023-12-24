@@ -12,8 +12,8 @@
     "convex-dev": "npx convex dev"
   },
   "engines": {
-    "node": "^20.9.0",
-    "npm": "^10.1.0"
+    "node": "^18.16.0 || ^20.9.0",
+    "npm": "^9.5.0 || ^10.1.0"
   },
   "dependencies": {
     "@blocknote/core": "0.10.1",
