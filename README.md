@@ -78,6 +78,6 @@ The application currently has 6 environment variables:
    - **What it is**: This is an edgestore variable secret key.
    - **Where it comes from**: [Edgestore](https://edgestore.dev) -> Login -> Dashboard -> Project -> Info icon -> Project Keys
 
-## Shout out t0
+## Shout out to
 
-[Code with Antonio](https://www.codewithantonio.com/) for an excellent tutorial on youtube. I really appreciate it what he's doing for the community. <3
+[Code with Antonio](https://www.codewithantonio.com/) for an excellent tutorial on youtube. I really appreciate it what he's doing for the community. 🫶🏻
