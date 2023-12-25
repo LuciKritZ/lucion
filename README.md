@@ -8,6 +8,14 @@
 4. [Convex](https://www.convex.dev/)
 5. [Edgestore](https://edgestore.dev/)
 
+## Documentation
+
+You can find all the technical documents [here](https://lucion.vercel.app/preview/j5768hqhvsvbew4tr56sm5daxn6g4cmg):
+
+1. [Functional Requirements](https://lucion.vercel.app/preview/j576g3g85r2f9q40vrpnm4jsjh6g74wt)
+2. [Limitations](https://lucion.vercel.app/preview/j57339nv7y6ykeb2czrpkqehw56g7rfw)
+3. [High Level Design](https://lucion.vercel.app/preview/j57b83afy693239v3v73cymc1x6g6wnc)
+
 ## Getting Started
 
 ### Local Machine
