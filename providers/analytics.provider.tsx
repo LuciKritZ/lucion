@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import { useUser } from '@clerk/clerk-react';
 import Script from 'next/script';
 
+import { identifyUserInHeap } from '@/lib/heap';
+
 /**
  * @see https://samelogic.com/blog/heap-analytics-in-nextjs-with-nextauthjs
  * AnalyticsProvider returns a Script tag for heap analytics.
@@ -16,11 +18,7 @@ const AnalyticsProvider = () => {
   useEffect(() => {
     if (user && window.heap) {
       console.info('Identifying Heap User...');
-      window.heap.identify(user.id);
-      window.heap.addUserProperties({
-        name: user.fullName,
-        email: user.primaryEmailAddress?.emailAddress,
-      });
+      identifyUserInHeap(user.id);
     }
   }, [scriptLoaded, user]);
 

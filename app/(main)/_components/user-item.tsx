@@ -11,6 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { handleLogoutInHeap } from '@/lib/heap';
 
 export const UserItem = () => {
   const { user } = useUser();
@@ -63,7 +64,9 @@ export const UserItem = () => {
           asChild
           className='w-full cursor-pointer text-muted-foreground'
         >
-          <SignOutButton>Log out</SignOutButton>
+          <SignOutButton signOutCallback={handleLogoutInHeap}>
+            Log out
+          </SignOutButton>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
