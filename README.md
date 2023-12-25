@@ -7,6 +7,7 @@
 3. [Clerk](https://clerk.com/)
 4. [Convex](https://www.convex.dev/)
 5. [Edgestore](https://edgestore.dev/)
+6. [Heap Analytics](https://heapanalytics.com/)
 
 ## Documentation
 
@@ -86,6 +87,11 @@ The application currently has 6 environment variables:
    - **What it is**: This is an edgestore variable secret key.
    - **Where it comes from**: [Edgestore](https://edgestore.dev) -> Login -> Dashboard -> Project -> Info icon -> Project Keys
 
+7. `NEXT_PUBLIC_HEAP_ANALYTICS_ID`
+
+   - **What it is**: Heap Analytics key based on the type of environment.
+   - **Where it comes from**: [Heap Analytics](https://heapanalytics.com) -> Login -> Account -> Install -> Web
+
 ## Shout out to
 
-[Code with Antonio](https://www.codewithantonio.com/) for an excellent tutorial on youtube. I really appreciate what he's doing for the community. 🫶🏻
+[Code with Antonio](https://www.codewithantonio.com/) for an excellent tutorial on youtube. I really appreciate the contributions for the community. 🫶🏻

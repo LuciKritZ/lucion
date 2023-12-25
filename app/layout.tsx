@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { Toaster } from 'sonner';
 
 import { EdgeStoreProvider } from '@/lib/edgestore';
+import AnalyticsProvider from '@/providers/analytics.provider';
 import ConvexClientProvider from '@/providers/convex.provider';
 import { ModalProvider } from '@/providers/modal.provider';
 import { ThemeProvider } from '@/providers/theme.provider';
@@ -52,6 +53,7 @@ export default function RootLayout({
               {children}
             </ThemeProvider>
           </EdgeStoreProvider>
+          <AnalyticsProvider />
         </ConvexClientProvider>
       </body>
     </html>
